@@ -13,7 +13,8 @@ names_map = {
     "observationtimestamp": "observationTimeStamp",
     "studydbid": "studyDbId",
     "observationtreatment": "observationtreatment",
-    "treatmentdbid": "treatmentDbId"
+    "treatmentdbid": "treatmentDbId",
+    "observationunitname": "observationUnitName"
 }
 
 def search(germplasmDbId=None, observationVariableDbId=None, studyDbId=None, locationDbId=None, trialDbId=None, programDbId=None, seasonDbId=None, observationLevel=None, observationTimeStampRangeStart=None, observationTimeStampRangeEnd=None, pageSize=None, page=None):
@@ -31,7 +32,7 @@ def search(germplasmDbId=None, observationVariableDbId=None, studyDbId=None, loc
                     t.id::text as observationDbId, \
                     t.mean::text as value, \
                     t.date as observationTimeStamp, \
-                    s.sitename as location_abbreviation, \
+                    s.sitename as observationUnitName, \
                     es.experiment_id::text as studyDbId, \
                     et.treatment_id as treatmentDbId, \
                     treatments.name as season, \
