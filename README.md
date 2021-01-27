@@ -24,13 +24,13 @@ See [Swagger documentation](http://terraref.org/brapi/v1/ui) for more details
   /commoncropnames
   	paging				
   /events
-    date
-    eventDbId
-    eventDescription
-    eventParameters
-    eventType
-    observationUnitDbIds
-    studyDbId
+   date
+   eventDbId
+   eventDescription
+   eventParameters
+   eventType
+   observationUnitDbIds
+   studyDbId
   /locations
   	locationType - Unavailable
   	paging
